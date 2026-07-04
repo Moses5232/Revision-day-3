@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📝 Item Collector</h1>
+
+  <div>
+    <input type="text" id="itemName" placeholder="Item name">
+    <input type="number" id="itemValue" placeholder="Value">
+    <button id="addBtn">Add Item</button>
+    <button id="clearBtn">Clear All</button>
+  </div>
+
+  <div>
+    <button id="filterHighBtn">Show High Value (>50)</button>
+    <button id="sortBtn">Sort by Value</button>
+    <button id="showAllBtn">Show All</button>
+  </div>
+
+  <div id="itemList">
+    No items yet. Add one above!
+  </div>
+
+  <div id="stats">
+    <div class="stat"><strong>Total Items:</strong> <span id="total">0</span></div>
+    <div class="stat"><strong>Total Value:</strong> <span id="totalVal">0</span></div>
+    <div class="stat"><strong>Average Value:</strong> <span id="avgVal">0</span></div>
+    <div class="stat"><strong>Highest Value:</strong> <span id="maxVal">0</span></div>
+  </div>
+    
+  <script src="script.js"></script>
+</body>
+</html>
